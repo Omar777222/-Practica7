@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #d2691e;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background-image: url('https://imag.bonviveur.com/burritos-de-pollo-en-la-mesa.jpg'); /* Imagen llamativa de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Menú de navegación */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #333;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    background-color: #f50000;
+}
+
+/* Área principal */
+.areaPrincipal {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Información */
+#datos {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #d2691e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries - Responsividad */
+@media (max-width: 768px) {
+    .image-placeholder img {
+        width: 100%;
+    }
+
+    #menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Ajustes para las páginas */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria img {
+    width: 32%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
